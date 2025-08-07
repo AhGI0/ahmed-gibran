@@ -683,3 +683,7 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+.project-image.one{  
+    background-image: url(./pics/download.png);
+
+}

@@ -14,7 +14,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#meetups">Meetups</a></li>
+                <li><a href="#featured-projects">Challenges</a></li>
             </ul>
             <button class="theme-toggle">
                 <span class="theme-icon">🌙</span>
@@ -141,75 +141,45 @@
                     </div>
                 </div>
 
-                <div class="project-card fade-in">
-                    <div class="project-image">Mobile Weather App</div>
-                    <div class="project-content">
-                        <h3>Weather Forecast App</h3>
-                        <div class="project-tech">React Native • OpenWeather API • Redux</div>
-                        <div class="project-description">
-                            A cross-platform mobile application providing detailed weather forecasts 
-                            with location-based services, push notifications, and offline caching 
-                            for better user experience.
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank">App Store</a>
-                            <a href="#" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
 
-        <section id="meetups" class="section">
-            <h2>Meetups & Events</h2>
-            <div class="meetups-list">
-                <div class="meetup-item fade-in">
-                    <h3>React Developers Meetup</h3>
-                    <div class="meetup-date">January 2024</div>
-                    <div class="meetup-description">
-                        Attended a fantastic session on React Server Components and Next.js 14. 
-                        Great networking opportunity with fellow developers and learned about the latest 
-                        trends in React ecosystem.
-                    </div>
-                </div>
+<section id="featured-projects" class="section">
+    <h2>Featured Projects & Case Studies</h2>
+    <div class="case-studies-list">
 
-                <div class="meetup-item fade-in">
-                    <h3>Tech Entrepreneurs Network</h3>
-                    <div class="meetup-date">December 2023</div>
-                    <div class="meetup-description">
-                        Participated in startup pitch sessions and panel discussions about building 
-                        scalable applications. Connected with founders and learned about the business 
-                        side of technology.
-                    </div>
-                </div>
-
-                <div class="meetup-item fade-in">
-                    <h3>AI/ML Study Group</h3>
-                    <div class="meetup-date">November 2023</div>
-                    <div class="meetup-description">
-                        Weekly study group focusing on machine learning fundamentals. Collaborated on 
-                        projects and shared knowledge about different ML algorithms and their applications.
-                    </div>
-                </div>
-
-                <div class="meetup-item fade-in">
-                    <h3>DevOps Community Conference</h3>
-                    <div class="meetup-date">October 2023</div>
-                    <div class="meetup-description">
-                        Two-day conference covering containerization, CI/CD best practices, and cloud 
-                        architecture. Hands-on workshops on Kubernetes and Docker were particularly valuable.
-                    </div>
-                </div>
-
-                <div class="meetup-item fade-in">
-                    <h3>Local Coding Bootcamp Alumni</h3>
-                    <div class="meetup-date">September 2023</div>
-                    <div class="meetup-description">
-                        Monthly meetup with bootcamp graduates sharing career experiences and technical 
-                        challenges. Great mentorship opportunities and peer learning sessions.
-                    </div>
-                </div>
+        <div class="case-study-item fade-in">
+            <h3>Vision-AI — Health Monitoring Dashboard</h3>
+            <div class="case-study-tech">Python • Flask • TensorFlow • Chart.js</div>
+            <p><strong>Problem:</strong> People often lack access to real-time health metrics without expensive devices or complex setups.</p>
+            <p><strong>Approach:</strong> I integrated TensorFlow.js for anomaly detection, Chart.js for interactive data visualization, and connected with smart devices via Bluetooth and phone sensors. The backend handled real-time updates using Flask APIs.</p>
+            <p><strong>Challenges:</strong> Handling noisy sensor data and ensuring anomaly detection was accurate. I implemented an autoencoder-based model and preprocessing pipeline to improve accuracy by 18%.</p>
+            <p><strong>Impact:</strong> Enabled users to track heart rate, blood pressure, sleep, and activity in real-time, making proactive health monitoring accessible without expensive equipment.</p>
+            <div class="project-links">
+                <a href="https://vision-ai-alpha.vercel.app/" target="_blank">Live Demo</a>
+                <a href="https://github.com/AhGI0/visionAI" target="_blank">GitHub</a>
             </div>
+        </div> 
+        <br>
+        <hr>
+        <br>
+
+        <div class="case-study-item fade-in">
+            <h3>Weather Forecast App — Cross-Platform Mobile App</h3>
+            <div class="case-study-tech">React Native • OpenWeather API • Redux</div>
+            <p><strong>Problem:</strong> Existing weather apps were cluttered and lacked offline capabilities for areas with unstable internet.</p>
+            <p><strong>Approach:</strong> I built a clean, fast, and offline-ready weather application using React Native. Redux was used for state management, and data caching allowed users to view forecasts without connectivity.</p>
+            <p><strong>Challenges:</strong> Implementing offline caching while keeping storage minimal. Solved it using a lightweight indexed storage approach.</p>
+            <p><strong>Impact:</strong> Delivered a smooth mobile experience with real-time weather updates and push notifications, reducing load times by 40% compared to similar apps.</p>
+            <div class="project-links">
+                <a href="https://forecasta-six.vercel.app/" target="_blank">Live Demo</a>
+                <a href="https://github.com/AhGI0/Forecasta" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+    </div>
+</section>
         </section>
     </main>
 

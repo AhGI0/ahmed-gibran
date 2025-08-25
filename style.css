@@ -707,7 +707,7 @@
   margin: 0;
   font-size: 1.25rem;
   color: var(--text-color, #222);
-}
+} 
 
 .experience-item .company {
   font-weight: bold;

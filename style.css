@@ -689,44 +689,79 @@
 }
 
 .experience-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .experience-item {
-  padding: 18px 20px;
-  border-left: 3px solid var(--accent-color, #0077ff);
-  background: var(--card-bg, #f9f9f9);
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    background: #f8f9fa;
+    padding: 1.8rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+body.dark-mode .experience-item {
+    background: #1a202c;
+    border-left-color: #64ffda;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+body.dark-mode .experience-item:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 .experience-item h3 {
-  margin: 0;
-  font-size: 1.25rem;
-  color: var(--text-color, #222);
-} 
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .experience-item h3 {
+    color: #64ffda;
+}
 
 .experience-item .company {
-  font-weight: bold;
-  color: var(--accent-color, #0077ff);
+    font-weight: 600;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .experience-item .company {
+    color: #64ffda;
 }
 
 .experience-item .date {
-  font-size: 0.9rem;
-  color: #666;
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .experience-item .date {
+    color: #a0aec0;
 }
 
 .experience-description {
-  margin-top: 10px;
-  padding-left: 18px;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--text-color, #333);
+    list-style: disc;
+    margin-left: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .experience-description {
+    color: #a0aec0;
 }
 
 .experience-description li {
-  margin-bottom: 6px;
+    margin-bottom: 0.5rem;
 }

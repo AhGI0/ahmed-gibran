@@ -687,3 +687,46 @@
     background-image: url(./pics/download.png);
 
 }
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.experience-item {
+  padding: 18px 20px;
+  border-left: 3px solid var(--accent-color, #0077ff);
+  background: var(--card-bg, #f9f9f9);
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.experience-item h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--text-color, #222);
+}
+
+.experience-item .company {
+  font-weight: bold;
+  color: var(--accent-color, #0077ff);
+}
+
+.experience-item .date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.experience-description {
+  margin-top: 10px;
+  padding-left: 18px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-color, #333);
+}
+
+.experience-description li {
+  margin-bottom: 6px;
+}
